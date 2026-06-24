@@ -2,7 +2,7 @@
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:00ffc8,100:ff6b9d&height=190&section=header&text=ahron&fontColor=0d1117&fontSize=70&fontAlignY=38&animation=fadeIn" width="100%" alt="header banner"/>
 
-<img src="https://readme-typing-svg.demolab.com?font=Press+Start+2P&size=15&duration=2800&pause=1200&color=00FFC8&center=true&vCenter=true&width=620&height=55&lines=hey+%E2%80%94+i'm+ahron.;web+%2B+mobile+%2B+ai.;building+things+that+matter.;always+shipping." alt="typing intro" />
+<img src="https://readme-typing-svg.demolab.com?font=Press+Start+2P&size=15&duration=2800&pause=1200&color=00FFC8&center=true&vCenter=true&width=620&height=55&lines=hey+%E2%80%94+I'M+AHRPN;web+%2B+mobile+%2B+ai.;building+things+that+matter.;always+shipping." alt="typing intro" />
 
 <br/>
 
