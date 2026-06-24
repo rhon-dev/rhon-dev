@@ -93,6 +93,10 @@ const ahron = {
 
 <img src="https://github-readme-activity-graph.vercel.app/graph?username=rhon-dev&bg_color=0d1117&color=00ffc8&line=ff6b9d&point=ffffff&hide_border=true&area=true&area_color=00ffc820" width="95%" alt="activity graph"/>
 
+<br/>
+
+![snake svg](https://github.com/rhon-dev/rhon-dev/raw/output/dist/github-snake-dark.svg)
+
 </div>
 
 ---
