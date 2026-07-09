@@ -57,24 +57,12 @@ const ahron = {
 
 ### projects
 
-<a href="https://github.com/rhon-dev/Neural_Network">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=rhon-dev&repo=Neural_Network&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00ffc8&icon_color=ff6b9d&text_color=8b949e" alt="Neural_Network"/>
-</a>
-<a href="https://github.com/rhon-dev/Kumpas">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=rhon-dev&repo=Kumpas&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00ffc8&icon_color=ff6b9d&text_color=8b949e" alt="Kumpas"/>
-</a>
-<a href="https://github.com/rhon-dev/portfolio">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=rhon-dev&repo=portfolio&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00ffc8&icon_color=ff6b9d&text_color=8b949e" alt="portfolio"/>
-</a>
-<a href="https://github.com/rhon-dev/KumpasApp">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=rhon-dev&repo=KumpasApp&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00ffc8&icon_color=ff6b9d&text_color=8b949e" alt="KumpasApp"/>
-</a>
-<a href="https://github.com/rhon-dev/Expenses-Tracker">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=rhon-dev&repo=Expenses-Tracker&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00ffc8&icon_color=ff6b9d&text_color=8b949e" alt="Expenses-Tracker"/>
-</a>
-<a href="https://github.com/rhon-dev/Reflex-Trainer">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=rhon-dev&repo=Reflex-Trainer&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00ffc8&icon_color=ff6b9d&text_color=8b949e" alt="Reflex-Trainer"/>
-</a>
+[![Neural_Network](https://img.shields.io/badge/Neural__Network-Python%20·%20ML%20from%20scratch-0d1117?style=for-the-badge&logo=python&logoColor=00ffc8)](https://github.com/rhon-dev/Neural_Network)
+[![Kumpas](https://img.shields.io/badge/Kumpas-AI%20powered%20app-0d1117?style=for-the-badge&logo=python&logoColor=ff6b9d)](https://github.com/rhon-dev/Kumpas)
+[![portfolio](https://img.shields.io/badge/portfolio-Personal%20site-0d1117?style=for-the-badge&logo=javascript&logoColor=F7DF1E)](https://github.com/rhon-dev/portfolio)
+[![KumpasApp](https://img.shields.io/badge/KumpasApp-Flutter%20app-0d1117?style=for-the-badge&logo=flutter&logoColor=54C5F8)](https://github.com/rhon-dev/KumpasApp)
+[![Expenses-Tracker](https://img.shields.io/badge/Expenses--Tracker-Python-0d1117?style=for-the-badge&logo=python&logoColor=00ffc8)](https://github.com/rhon-dev/Expenses-Tracker)
+[![Reflex-Trainer](https://img.shields.io/badge/Reflex--Trainer-JavaScript-0d1117?style=for-the-badge&logo=javascript&logoColor=F7DF1E)](https://github.com/rhon-dev/Reflex-Trainer)
 
 <br/>
 
@@ -88,10 +76,18 @@ const ahron = {
 
 ### stats
 
-<img src="https://github-readme-stats.vercel.app/api?username=rhon-dev&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00ffc8&icon_color=ff6b9d&text_color=8b949e&hide_title=true&rank_icon=github" width="49%" alt="github stats"/>
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=rhon-dev&theme=tokyonight&hide_border=true&background=0d1117&ring=00ffc8&fire=ff6b9d&currStreakLabel=00ffc8&sideLabels=8b949e&dates=8b949e" width="49%" alt="streak stats"/>
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=rhon-dev&theme=tokyonight" width="32%" alt="stats"/>
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=rhon-dev&theme=tokyonight" width="32%" alt="top commit languages"/>
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=rhon-dev&theme=tokyonight" width="32%" alt="repos per language"/>
 
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=rhon-dev&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00ffc8&text_color=8b949e&langs_count=6" width="42%" alt="top languages"/>
+<br/>
+
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=rhon-dev&theme=tokyonight" width="95%" alt="profile details"/>
+
+<br/>
+
+<img src="https://streak-stats.demolab.com/?user=rhon-dev&theme=tokyonight&hide_border=true&background=0d1117&ring=00ffc8&fire=ff6b9d&currStreakLabel=00ffc8&sideLabels=8b949e&dates=8b949e" width="49%" alt="streak stats"/>
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=rhon-dev&theme=tokyonight&utcOffset=8" width="49%" alt="productive time"/>
 
 <br/>
 
