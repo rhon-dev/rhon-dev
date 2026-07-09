@@ -16,11 +16,11 @@
 const ahron = {
   handle : "rhon-dev",
   based  : "Philippines 🇵🇭",
-  langs  : ["Python", "TypeScript", "Dart"],
+  langs  : ["Python", "TypeScript", "Dart", "JavaScript"],
   stack  : ["Flutter", "Flask", "Next.js"],
-  ai     : ["LangChain", "OpenAI", "Anthropic (Claude)"],
+  ai     : ["LangChain", "OpenAI", "Anthropic (Claude)", "Kiro"],
   focus  : "AI × mobile × web",
-  now    : "shipping agents & apps",
+  now    : "building neural nets, shipping Kumpas & prime-v2",
 };
 ```
 
@@ -47,6 +47,7 @@ const ahron = {
 ![LangChain](https://img.shields.io/badge/LangChain-0d1117?style=for-the-badge&logo=langchain&logoColor=00ffc8)
 ![OpenAI](https://img.shields.io/badge/OpenAI-0d1117?style=for-the-badge&logo=openai&logoColor=ffffff)
 ![Anthropic](https://img.shields.io/badge/Anthropic_Claude-0d1117?style=for-the-badge&logo=anthropic&logoColor=ff6b9d)
+![Kiro](https://img.shields.io/badge/Kiro-0d1117?style=for-the-badge&logo=amazonaws&logoColor=00ffc8)
 
 </div>
 
@@ -56,20 +57,23 @@ const ahron = {
 
 ### projects
 
+<a href="https://github.com/rhon-dev/Neural_Network">
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=rhon-dev&repo=Neural_Network&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00ffc8&icon_color=ff6b9d&text_color=8b949e" alt="Neural_Network"/>
+</a>
+<a href="https://github.com/rhon-dev/Kumpas">
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=rhon-dev&repo=Kumpas&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00ffc8&icon_color=ff6b9d&text_color=8b949e" alt="Kumpas"/>
+</a>
+<a href="https://github.com/rhon-dev/portfolio">
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=rhon-dev&repo=portfolio&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00ffc8&icon_color=ff6b9d&text_color=8b949e" alt="portfolio"/>
+</a>
 <a href="https://github.com/rhon-dev/KumpasApp">
   <img src="https://github-readme-stats.vercel.app/api/pin/?username=rhon-dev&repo=KumpasApp&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00ffc8&icon_color=ff6b9d&text_color=8b949e" alt="KumpasApp"/>
-</a>
-<a href="https://github.com/rhon-dev/Reflex-Trainer">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=rhon-dev&repo=Reflex-Trainer&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00ffc8&icon_color=ff6b9d&text_color=8b949e" alt="Reflex-Trainer"/>
-</a>
-<a href="https://github.com/rhon-dev/mock-sace-attendance-system">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=rhon-dev&repo=mock-sace-attendance-system&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00ffc8&icon_color=ff6b9d&text_color=8b949e" alt="mock-sace-attendance-system"/>
 </a>
 <a href="https://github.com/rhon-dev/Expenses-Tracker">
   <img src="https://github-readme-stats.vercel.app/api/pin/?username=rhon-dev&repo=Expenses-Tracker&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00ffc8&icon_color=ff6b9d&text_color=8b949e" alt="Expenses-Tracker"/>
 </a>
-<a href="https://github.com/rhon-dev/Blog-with-flask-">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=rhon-dev&repo=Blog-with-flask-&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00ffc8&icon_color=ff6b9d&text_color=8b949e" alt="Blog-with-flask-"/>
+<a href="https://github.com/rhon-dev/Reflex-Trainer">
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=rhon-dev&repo=Reflex-Trainer&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00ffc8&icon_color=ff6b9d&text_color=8b949e" alt="Reflex-Trainer"/>
 </a>
 
 <br/>
