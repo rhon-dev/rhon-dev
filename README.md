@@ -16,11 +16,12 @@
 const ahron = {
   handle : "rhon-dev",
   based  : "Philippines 🇵🇭",
-  langs  : ["Python", "TypeScript", "Dart", "JavaScript"],
-  stack  : ["Flutter", "Flask", "Next.js"],
+  langs  : ["TypeScript", "Python", "Dart", "JavaScript"],
+  stack  : ["Next.js", "React", "Flutter", "FastAPI", "Prisma"],
+  data   : ["PostgreSQL", "MongoDB"],
   ai     : ["LangChain", "OpenAI", "Anthropic (Claude)", "Kiro"],
   focus  : "AI × mobile × web",
-  now    : "building neural nets, shipping Kumpas & prime-v2",
+  now    : "shipping HirAIya, iterating on Kumpas & prime-v2",
 };
 ```
 
@@ -28,26 +29,35 @@ const ahron = {
 
 ### languages
 
-![Python](https://img.shields.io/badge/Python-0d1117?style=for-the-badge&logo=python&logoColor=00ffc8)
 ![TypeScript](https://img.shields.io/badge/TypeScript-0d1117?style=for-the-badge&logo=typescript&logoColor=3178C6)
+![Python](https://img.shields.io/badge/Python-0d1117?style=for-the-badge&logo=python&logoColor=00ffc8)
 ![Dart](https://img.shields.io/badge/Dart-0d1117?style=for-the-badge&logo=dart&logoColor=0175C2)
 ![JavaScript](https://img.shields.io/badge/JavaScript-0d1117?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
 
 ### frameworks &middot; tools
 
-![Flutter](https://img.shields.io/badge/Flutter-0d1117?style=for-the-badge&logo=flutter&logoColor=54C5F8)
-![Flask](https://img.shields.io/badge/Flask-0d1117?style=for-the-badge&logo=flask&logoColor=ffffff)
 ![Next.js](https://img.shields.io/badge/Next.js-0d1117?style=for-the-badge&logo=next.js&logoColor=ffffff)
+![React](https://img.shields.io/badge/React-0d1117?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Tailwind](https://img.shields.io/badge/Tailwind-0d1117?style=for-the-badge&logo=tailwindcss&logoColor=38BDF8)
+![Flutter](https://img.shields.io/badge/Flutter-0d1117?style=for-the-badge&logo=flutter&logoColor=54C5F8)
+![FastAPI](https://img.shields.io/badge/FastAPI-0d1117?style=for-the-badge&logo=fastapi&logoColor=009688)
+![Flask](https://img.shields.io/badge/Flask-0d1117?style=for-the-badge&logo=flask&logoColor=ffffff)
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-0d1117?style=for-the-badge&logo=tensorflow&logoColor=FF6F00)
 ![Git](https://img.shields.io/badge/Git-0d1117?style=for-the-badge&logo=git&logoColor=F05032)
-![VS Code](https://img.shields.io/badge/VS_Code-0d1117?style=for-the-badge&logo=visual-studio-code&logoColor=007ACC)
+
+### data
+
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-0d1117?style=for-the-badge&logo=postgresql&logoColor=4169E1)
+![MongoDB](https://img.shields.io/badge/MongoDB-0d1117?style=for-the-badge&logo=mongodb&logoColor=47A248)
+![Prisma](https://img.shields.io/badge/Prisma-0d1117?style=for-the-badge&logo=prisma&logoColor=ffffff)
+![Vercel](https://img.shields.io/badge/Vercel-0d1117?style=for-the-badge&logo=vercel&logoColor=ffffff)
 
 ### ai stack
 
 ![LangChain](https://img.shields.io/badge/LangChain-0d1117?style=for-the-badge&logo=langchain&logoColor=00ffc8)
 ![OpenAI](https://img.shields.io/badge/OpenAI-0d1117?style=for-the-badge&logo=openai&logoColor=ffffff)
 ![Anthropic](https://img.shields.io/badge/Anthropic_Claude-0d1117?style=for-the-badge&logo=anthropic&logoColor=ff6b9d)
-![Kiro](https://img.shields.io/badge/Kiro-0d1117?style=for-the-badge&logo=amazonaws&logoColor=00ffc8)
+![Kiro](https://img.shields.io/badge/Kiro-0d1117?style=for-the-badge&labelColor=0d1117&color=00ffc8)
 
 </div>
 
@@ -55,14 +65,21 @@ const ahron = {
 
 <div align="center">
 
+### live
+
+[![HirAIya](https://img.shields.io/badge/HirAIya-live%20demo-0d1117?style=for-the-badge&logo=vercel&logoColor=00ffc8)](https://hir-a-iya.vercel.app)
+[![portfolio](https://img.shields.io/badge/portfolio-live%20demo-0d1117?style=for-the-badge&logo=vercel&logoColor=ff6b9d)](https://portfolio-rhon-devs-projects.vercel.app)
+
 ### projects
 
+[![HirAIya](https://img.shields.io/badge/HirAIya-Next.js%2016%20·%20Prisma%20·%20Postgres-0d1117?style=for-the-badge&logo=nextdotjs&logoColor=ffffff)](https://github.com/rhon-dev/HirAIya)
+[![Kumpas](https://img.shields.io/badge/Kumpas-Flutter%20·%20AI%20powered-0d1117?style=for-the-badge&logo=flutter&logoColor=54C5F8)](https://github.com/rhon-dev/Kumpas)
+[![Synapse](https://img.shields.io/badge/Synapse-FastAPI%20·%20MongoDB%20·%20OpenAI-0d1117?style=for-the-badge&logo=fastapi&logoColor=009688)](https://github.com/rhon-dev/Synapse)
+[![portfolio](https://img.shields.io/badge/portfolio-React%20Three%20Fiber%20·%203D-0d1117?style=for-the-badge&logo=three.js&logoColor=ffffff)](https://github.com/rhon-dev/portfolio)
 [![Neural_Network](https://img.shields.io/badge/Neural__Network-Python%20·%20ML%20from%20scratch-0d1117?style=for-the-badge&logo=python&logoColor=00ffc8)](https://github.com/rhon-dev/Neural_Network)
-[![Kumpas](https://img.shields.io/badge/Kumpas-AI%20powered%20app-0d1117?style=for-the-badge&logo=python&logoColor=ff6b9d)](https://github.com/rhon-dev/Kumpas)
-[![portfolio](https://img.shields.io/badge/portfolio-Personal%20site-0d1117?style=for-the-badge&logo=javascript&logoColor=F7DF1E)](https://github.com/rhon-dev/portfolio)
+[![Clad](https://img.shields.io/badge/Clad-TypeScript-0d1117?style=for-the-badge&logo=typescript&logoColor=3178C6)](https://github.com/rhon-dev/Clad)
+[![Kinetik](https://img.shields.io/badge/Kinetik-JavaScript-0d1117?style=for-the-badge&logo=javascript&logoColor=F7DF1E)](https://github.com/rhon-dev/Kinetik)
 [![KumpasApp](https://img.shields.io/badge/KumpasApp-Flutter%20app-0d1117?style=for-the-badge&logo=flutter&logoColor=54C5F8)](https://github.com/rhon-dev/KumpasApp)
-[![Expenses-Tracker](https://img.shields.io/badge/Expenses--Tracker-Python-0d1117?style=for-the-badge&logo=python&logoColor=00ffc8)](https://github.com/rhon-dev/Expenses-Tracker)
-[![Reflex-Trainer](https://img.shields.io/badge/Reflex--Trainer-JavaScript-0d1117?style=for-the-badge&logo=javascript&logoColor=F7DF1E)](https://github.com/rhon-dev/Reflex-Trainer)
 
 <br/>
 
@@ -95,7 +112,11 @@ const ahron = {
 
 <br/>
 
-![snake svg](https://github.com/rhon-dev/rhon-dev/raw/output/dist/github-snake-dark.svg)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/rhon-dev/rhon-dev/output/github-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/rhon-dev/rhon-dev/output/github-snake.svg" />
+  <img alt="github contribution snake animation" src="https://raw.githubusercontent.com/rhon-dev/rhon-dev/output/github-snake-dark.svg" width="95%" />
+</picture>
 
 </div>
 
