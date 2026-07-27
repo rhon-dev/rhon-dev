@@ -1,0 +1,44 @@
+name: Generate Profile Summary Cards
+
+on:
+  # refresh once a day
+  schedule:
+    - cron: "0 3 * * *"
+
+  # allows manual runs from the Actions tab
+  workflow_dispatch:
+
+  # generate immediately on merge, so the cards exist without waiting for cron.
+  # paths-ignore prevents the workflow from re-triggering itself on its own
+  # generated output if a PAT is used instead of the built-in token.
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - "profile-summary-card-output/**"
+
+jobs:
+  build:
+    name: generate-github-profile-summary-cards
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: vn7n24fzkq/github-profile-summary-cards@release
+        env:
+          # Uses the repo secret SUMMARY_GITHUB_TOKEN if present, otherwise falls
+          # back to the built-in Actions token. Adding the PAT later needs no
+          # change here, and makes totals include private contributions.
+          GITHUB_TOKEN: ${{ secrets.SUMMARY_GITHUB_TOKEN || github.token }}
+        with:
+          USERNAME: ${{ github.repository_owner }}
+          BRANCH_NAME: "main"
+          # Philippines, UTC+8 — keeps the productive-time heatmap in local time
+          UTC_OFFSET: 8
+          # single theme only; leaving this empty generates every theme (~80 files)
+          THEME: "tokyonight"
+          AUTO_PUSH: true

@@ -8,6 +8,13 @@ on:
   # allows manual runs from the Actions tab
   workflow_dispatch:
 
+  # generate immediately on merge so the output branch gets created without
+  # waiting for the weekly cron. Output goes to the `output` branch, never
+  # main, so this cannot re-trigger itself.
+  push:
+    branches:
+      - main
+
 jobs:
   generate:
     runs-on: ubuntu-latest
