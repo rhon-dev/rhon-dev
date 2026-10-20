@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="192" viewBox="0 0 880 192" role="img" aria-label="snake loading">
+  <!-- placeholder: overwritten by .github/workflows/snake.yml on its first run -->
+  <rect width="880" height="192" rx="8" fill="#0d1117"/>
+  <g fill="#ff3b3b">
+    <rect y="88" width="12" height="12" rx="2"><animate attributeName="x" from="20" to="860" dur="5s" repeatCount="indefinite"/></rect>
+    <rect y="88" width="12" height="12" rx="2" opacity="0.8"><animate attributeName="x" from="4" to="844" dur="5s" repeatCount="indefinite"/></rect>
+    <rect y="88" width="12" height="12" rx="2" opacity="0.6"><animate attributeName="x" from="-12" to="828" dur="5s" repeatCount="indefinite"/></rect>
+    <rect y="88" width="12" height="12" rx="2" opacity="0.4"><animate attributeName="x" from="-28" to="812" dur="5s" repeatCount="indefinite"/></rect>
+  </g>
+  <text x="440" y="140" text-anchor="middle" font-family="monospace" font-size="14" fill="#ff6b6b">snake is hatching... brb eating contributions</text>
+</svg>
