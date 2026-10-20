@@ -20,9 +20,10 @@ jobs:
         uses: Platane/snk/svg-only@v3
         with:
           github_user_name: ${{ github.repository_owner }}
+          # red theme: snake + 5 contribution levels (empty -> most)
           outputs: |
-            dist/github-snake.svg
-            dist/github-snake-dark.svg?palette=github-dark
+            dist/github-snake.svg?color_snake=#e01e1e&color_dots=#ebedf0,#ffb3b3,#ff6b6b,#e01e1e,#8b0000
+            dist/github-snake-dark.svg?palette=github-dark&color_snake=#ff3b3b&color_dots=#161b22,#5c0a0a,#8b0000,#e01e1e,#ff3b3b
 
       # publishes the contents of dist/ to the root of the `output` branch,
       # so files are served from raw/output/<file>

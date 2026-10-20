@@ -1,7 +1,7 @@
 name: Metrics
 
 on:
-  # refresh daily
+  # refresh daily (08:00 Asia/Manila)
   schedule:
     - cron: "0 0 * * *"
   # manual run from the Actions tab
@@ -11,73 +11,157 @@ on:
     branches: [main]
     paths: [".github/workflows/metrics.yml"]
 
-# one render at a time so commits don't race
 concurrency:
   group: metrics
   cancel-in-progress: false
 
+env:
+  # red theme for every card (classic template)
+  METRICS_CSS: |
+    h1, h2, h3, a, .tweet .link { color: #ff3b3b; }
+    :root {
+      --color-calendar-graph-day-L1-bg: #ffb3b3;
+      --color-calendar-graph-day-L2-bg: #ff6b6b;
+      --color-calendar-graph-day-L3-bg: #e01e1e;
+      --color-calendar-graph-day-L4-bg: #8b0000;
+    }
+    [fill="#9be9a8" i] { fill: #ffb3b3; }
+    [fill="#40c463" i] { fill: #ff6b6b; }
+    [fill="#30a14e" i] { fill: #e01e1e; }
+    [fill="#216e39" i] { fill: #8b0000; }
+  METRICS_AUTHORING: rhon-dev, Ahron Jan Rafael, ahron.0804@icloud.com, 184821871+rhon-dev@users.noreply.github.com
+  METRICS_TZ: Asia/Manila
+
 jobs:
   metrics:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 60
     permissions:
       contents: write
+    # each step runs even if a previous one failed (same as lowlighter's setup)
     steps:
-      # overview: header, activity, community, repos + languages + calendar
-      - name: overview
+      # left column: header + isocalendar + languages + topics
+      - name: general
+        if: ${{ success() || failure() }}
         uses: lowlighter/metrics@latest
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           committer_token: ${{ secrets.GITHUB_TOKEN }}
-          filename: metrics/overview.svg
-          template: classic
-          base: header, activity, community, repositories, metadata
-          config_timezone: Asia/Manila
+          filename: metrics/general.svg
+          base: header
+          config_order: base.header, isocalendar, languages, topics
+          config_timezone: ${{ env.METRICS_TZ }}
+          extras_css: ${{ env.METRICS_CSS }}
+          commits_authoring: ${{ env.METRICS_AUTHORING }}
           plugin_isocalendar: yes
           plugin_isocalendar_duration: full-year
           plugin_languages: yes
+          plugin_languages_indepth: yes
           plugin_languages_sections: most-used, recently-used
-          plugin_languages_limit: 8
-          plugin_languages_details: bytes-size, percentage
+          plugin_languages_recent_days: 30
+          plugin_languages_limit: 6
+          plugin_languages_details: lines, bytes-size, percentage
           plugin_languages_ignored: html, css, scss, shell, dockerfile, makefile
+          plugin_languages_skipped: rhon-dev
+          plugin_languages_colors: 0:#ff1f1f, 1:#ff6b6b, 2:#c41e3a, 3:#ffb3b3, 4:#8b0000, 5:#ff6b4a
+          plugin_topics: yes
+          plugin_topics_mode: icons
+          plugin_topics_sort: activity
+          plugin_topics_limit: 15
 
-      # coding habits + recent activity
+      # right column: habits + lines changed
       - name: habits
+        if: ${{ success() || failure() }}
         uses: lowlighter/metrics@latest
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           committer_token: ${{ secrets.GITHUB_TOKEN }}
           filename: metrics/habits.svg
           base: ""
-          config_timezone: Asia/Manila
+          config_timezone: ${{ env.METRICS_TZ }}
+          extras_css: ${{ env.METRICS_CSS }}
           plugin_habits: yes
           plugin_habits_facts: yes
           plugin_habits_charts: yes
+          plugin_habits_charts_type: graph
+          plugin_habits_trim: yes
           plugin_habits_days: 30
           plugin_lines: yes
           plugin_lines_sections: base
 
-      # featured repos as cards
-      - name: projects
-        uses: lowlighter/metrics@latest
-        with:
-          token: ${{ secrets.METRICS_TOKEN }}
-          committer_token: ${{ secrets.GITHUB_TOKEN }}
-          filename: metrics/projects.svg
-          base: ""
-          plugin_repositories: yes
-          plugin_repositories_featured: rhon-dev/HirAIya, rhon-dev/Kumpas, rhon-dev/Synapse, rhon-dev/portfolio, rhon-dev/Neural_Network, rhon-dev/Clad
-
-      # achievements
+      # right column: achievements
       - name: achievements
+        if: ${{ success() || failure() }}
         uses: lowlighter/metrics@latest
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           committer_token: ${{ secrets.GITHUB_TOKEN }}
           filename: metrics/achievements.svg
           base: ""
+          config_timezone: ${{ env.METRICS_TZ }}
+          extras_css: ${{ env.METRICS_CSS }}
           plugin_achievements: yes
           plugin_achievements_display: compact
           plugin_achievements_threshold: B
           plugin_achievements_secrets: yes
           plugin_achievements_limit: 0
+
+      # left column: featured repos
+      - name: projects
+        if: ${{ success() || failure() }}
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          committer_token: ${{ secrets.GITHUB_TOKEN }}
+          filename: metrics/projects.svg
+          base: ""
+          config_timezone: ${{ env.METRICS_TZ }}
+          extras_css: ${{ env.METRICS_CSS }}
+          plugin_repositories: yes
+          plugin_repositories_featured: rhon-dev/prime-v2, rhon-dev/Kasaran-App, rhon-dev/Kumpas, rhon-dev/HirAIya, rhon-dev/Shot-Or-Spill, rhon-dev/portfolio
+
+      # right column: recently starred
+      - name: stars
+        if: ${{ success() || failure() }}
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          committer_token: ${{ secrets.GITHUB_TOKEN }}
+          filename: metrics/stars.svg
+          base: ""
+          config_timezone: ${{ env.METRICS_TZ }}
+          extras_css: ${{ env.METRICS_CSS }}
+          plugin_stars: yes
+          plugin_stars_limit: 5
+
+      # right column: favorite characters (needs repo variable ANILIST_USER)
+      - name: medias
+        if: ${{ (success() || failure()) && vars.ANILIST_USER != '' }}
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          committer_token: ${{ secrets.GITHUB_TOKEN }}
+          filename: metrics/medias.svg
+          base: ""
+          config_timezone: ${{ env.METRICS_TZ }}
+          extras_css: ${{ env.METRICS_CSS }}
+          plugin_anilist: yes
+          plugin_anilist_user: ${{ vars.ANILIST_USER }}
+          plugin_anilist_medias: anime, manga
+          plugin_anilist_sections: characters
+          plugin_anilist_limit_characters: 5
+          plugin_anilist_shuffle: no
+
+      # bottom, collapsed: every year since joining
+      - name: calendar
+        if: ${{ success() || failure() }}
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          committer_token: ${{ secrets.GITHUB_TOKEN }}
+          filename: metrics/calendar.svg
+          base: ""
+          config_timezone: ${{ env.METRICS_TZ }}
+          extras_css: ${{ env.METRICS_CSS }}
+          plugin_calendar: yes
+          plugin_calendar_limit: 0
