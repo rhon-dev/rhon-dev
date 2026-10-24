@@ -1,0 +1,50 @@
+name: Daily log commits
+
+on:
+  schedule:
+    - cron: '17 12 * * *'
+      timezone: 'Asia/Manila'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-log-commits
+  cancel-in-progress: false
+
+jobs:
+  commit-log:
+    runs-on: ubuntu-latest
+    env:
+      TZ: Asia/Manila
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Create and push today's commits
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          git config user.name "Ahron Jan Rafael"
+          git config user.email "184821871+rhon-dev@users.noreply.github.com"
+          git pull --ff-only origin main
+
+          today="$(date +%F)"
+          if [[ -f log.txt ]] && grep -q "^${today} " log.txt; then
+            echo "Already logged $today; skipping."
+            exit 0
+          fi
+
+          count="$(shuf -i 2-10 -n 1)"
+          for ((i = 1; i <= count; i++)); do
+            printf '%s %02d/%02d %s\n' \
+              "$today" "$i" "$count" "$(date '+%H:%M:%S %z')" >> log.txt
+            git add -- log.txt
+            git commit -m "chore: update daily log ($today $i/$count)"
+          done
+
+          git push origin HEAD:main
